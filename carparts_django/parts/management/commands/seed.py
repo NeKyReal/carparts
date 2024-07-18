@@ -43,7 +43,7 @@ class Command(BaseCommand):
                     # шанс 70% на добавление поля
                     "color": choice(colors) if random() > 0.7 else None,
                     "is_new_part": choice([True, False]) if random() > 0.7 else None,
-                    "count": randint(1, 10) if random() > 0.5 else None
+                    "count": randint(1, 10) if random() > 0.7 else None
                 },
                 "is_visible": choice([True, False])
             }
